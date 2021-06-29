@@ -15,7 +15,6 @@ function NewComment(props) {
     const enteredName = nameInputRef.current.value;
     const enteredComment = commentInputRef.current.value;
 
-    // We should not trust on this kind of validtation
     if (
       !enteredEmail ||
       enteredEmail.trim() === "" ||

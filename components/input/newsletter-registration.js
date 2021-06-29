@@ -11,10 +11,6 @@ function NewsletterRegistration() {
   function registrationHandler(event) {
     event.preventDefault();
 
-    // fetch user input (state or refs)
-    // optional: validate input
-    // send valid data to API
-
     const enteredEmail = emailInputRef.current.value;
 
     notificationCtx.showNotification({
@@ -23,7 +19,6 @@ function NewsletterRegistration() {
       status: "pending",
     });
 
-    // 400 and 500 status code will not make this promise to fail so add "if" check in .then(response) to manually fail
     fetch("/api/newsletter", {
       method: "POST",
       body: JSON.stringify({

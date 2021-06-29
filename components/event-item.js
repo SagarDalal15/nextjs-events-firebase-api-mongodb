@@ -6,7 +6,6 @@ import DateIcon from "./icons/date-icon";
 import AddressIcon from "./icons/address-icon";
 import ArrowRightIcon from "./icons/arrow-right-icon";
 
-// Nextjs Image create multiple version of our image and sends the optimized image in production eg: webp type image
 import Image from "next/image";
 
 export default function EventItem(props) {
@@ -26,7 +25,6 @@ export default function EventItem(props) {
     <li className={classes.item}>
       <Image
         style={{ objectFit: "cover" }}
-        //here width and size determine the size of image that is fetched
         width={250}
         height={160}
         src={"/" + image}

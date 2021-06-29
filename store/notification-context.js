@@ -1,16 +1,14 @@
 import { createContext, useState, useEffect } from "react";
 
 const NotificationContext = createContext({
-  notification: null, // { title, message, status }
+  notification: null,
   showNotification: function (notificationData) {},
   hideNotification: function () {},
 });
 
-// NotificationContextProvider function : To wrap our components which can access our states
 export function NotificationContextProvider(props) {
   const [activeNotification, setActiveNotification] = useState();
 
-  // Using useEffect to track the changes in notification status
   useEffect(() => {
     if (
       activeNotification &&
@@ -21,7 +19,6 @@ export function NotificationContextProvider(props) {
         setActiveNotification(null);
       }, 3000);
 
-      //cleanup function of useEffect
       return () => {
         clearTimeout(timer);
       };
@@ -29,12 +26,6 @@ export function NotificationContextProvider(props) {
   }, [activeNotification]);
 
   const showNotificationHandler = (notificationData) => {
-    // setActiveNotification({
-    //   title: notificationData.title,
-    //   message: notificationData.message,
-    //   status: notificationData.status,
-    // });
-
     setActiveNotification(notificationData);
   };
 
