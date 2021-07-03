@@ -1,4 +1,4 @@
-# NextJS events website
+# NextJS events website (Firebase, MongoDB)
 
 ## Website Link
 
