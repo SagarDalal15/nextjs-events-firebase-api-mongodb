@@ -1,6 +1,12 @@
-# Website Link
+# NextJS events website
+
+## Website Link
 
 https://nextjs-events-firebase-api-mongodb.vercel.app
+
+<img width="1440" alt="Screenshot 2021-07-03 at 8 04 38 PM" src="https://user-images.githubusercontent.com/74422938/124357634-35936c80-dc3a-11eb-8f2f-18a2fa41e017.png">
+
+<img width="1440" alt="Screenshot 2021-07-03 at 8 04 58 PM" src="https://user-images.githubusercontent.com/74422938/124357685-7d19f880-dc3a-11eb-8e79-fc1935f8ead0.png">
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
