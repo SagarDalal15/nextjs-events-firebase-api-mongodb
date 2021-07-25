@@ -4,6 +4,7 @@ import "../styles/globals.css";
 import Layout from "../components/layout/layout";
 import "../components/ui/notification";
 import { NotificationContextProvider } from "../store/notification-context";
+import GithubLink from "../components/github-link";
 
 //This is the root component
 function MyApp({ Component, pageProps }) {
@@ -18,6 +19,7 @@ function MyApp({ Component, pageProps }) {
         </Head>
         <Component {...pageProps} />
       </Layout>
+      <GithubLink />
     </NotificationContextProvider>
   );
 }
